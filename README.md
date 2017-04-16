@@ -1,4 +1,4 @@
-# angularjs(ng2+) typescript webpack2 starter
+# angularjs(ng4) typescript webpack2 starter
 
 ## 安装
 
