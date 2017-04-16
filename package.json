@@ -6,9 +6,9 @@
   "scripts": {
     "build": "npm run clean && webpack --config ./config/webpack.build.config.js --progress",
     "dev": "webpack-dev-server --config ./config/webpack.dev.config.js --progress --content-base ./src",
-    "server": "http-server dist -p 3000 -c-1 --cors",
+    "serve": "http-server dist -p 3000 -c-1 --cors",
     "test": "karma start ./config/karma.conf.js",
-    "e2e": "npm-run-all -p -r server protractor:delay",
+    "e2e": "npm-run-all -p -r serve protractor:delay",
     "lint": "tslint ./src/**/*.ts",
     "clean": "rimraf dist",
     "postinstall": "npm run webdriver:update",
@@ -73,5 +73,12 @@
     "webpack": "^2.3.3",
     "webpack-dev-server": "^2.4.2",
     "webpack-merge": "^4.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qiangonline/angular-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/qiangonline/angular-starter/issues"
   }
 }

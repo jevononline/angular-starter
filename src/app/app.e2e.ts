@@ -6,7 +6,7 @@ describe('App', () => {
     browser.get('/');
   });
 
-  it('should have a title', () => {
+  it('test', () => {
     expect(1).toEqual(1);
   });
 

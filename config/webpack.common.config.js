@@ -31,7 +31,10 @@ let config = {
             loader: 'ng-router-loader'
           },
           {
-            loader: 'awesome-typescript-loader'
+            loader: 'awesome-typescript-loader',
+            options: {
+              configFileName: 'tsconfig.webpack.json'
+            }
           },
           {
             loader: 'angular2-template-loader'
