@@ -33,7 +33,7 @@ let config = {
           {
             loader: 'awesome-typescript-loader',
             options: {
-              configFileName: 'tsconfig.webpack.json'
+              configFileName: path.join(__dirname, '../tsconfig.webpack.json')
             }
           },
           {
