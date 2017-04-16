@@ -6,9 +6,9 @@
   "scripts": {
     "build": "npm run clean && webpack --config ./config/webpack.build.config.js --progress",
     "dev": "webpack-dev-server --config ./config/webpack.dev.config.js --progress --content-base ./src",
-    "serve": "http-server dist -p 3000 -c-1 --cors",
+    "server:ci": "http-server dist -p 3000 -c-1 --cors",
     "test": "karma start ./config/karma.conf.js",
-    "e2e": "npm-run-all -p -r serve protractor:delay",
+    "e2e": "npm-run-all -p -r server:ci protractor:delay",
     "lint": "tslint ./src/**/*.ts",
     "clean": "rimraf dist",
     "postinstall": "npm run webdriver:update",
