@@ -1,5 +1,5 @@
-# angularjs(ng4) typescript webpack2 starter
-
+# angular starter
+> ng4,AOT,Lazy Load,Test,E2E,Karma,Protractor,Jasmine,TypeScript,TsLint,Codelyzer,Webpack 2
 ## 安装
 
 ```
@@ -18,4 +18,8 @@ npm run test
 ```
 ```
 npm run e2e
+```
+## 发布
+```
+npm run build
 ```
