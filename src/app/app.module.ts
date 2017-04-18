@@ -1,3 +1,6 @@
+/* global styles */
+import 'assets/styles/styles.scss';
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, PreloadAllModules } from '@angular/router';

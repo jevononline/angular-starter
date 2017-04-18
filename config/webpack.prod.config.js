@@ -2,9 +2,14 @@ const path = require('path');
 
 const webpack = require('webpack');
 const merge = require('webpack-merge');
-const AssetsPlugin = require('assets-webpack-plugin');
 
-let config = require('./webpack.common.config.js');
+const AssetsPlugin = require('assets-webpack-plugin');
+let {
+  aotEntry,
+  aotTsLoader,
+  ngcWebpackPlugin
+} = require('./webpack.parts.config');
+let config = require('./webpack.common.config');
 
 module.exports = merge(config, {
   devtool: 'source-map',
@@ -40,4 +45,4 @@ module.exports = merge(config, {
       prettyPrint: true
     })
   ]
-});
+}, aotEntry, aotTsLoader, ngcWebpackPlugin);
