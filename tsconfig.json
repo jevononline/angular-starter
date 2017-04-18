@@ -5,9 +5,11 @@
     "target": "es5",
     "lib": ["es2016", "dom"],
     "sourceMap": true,
+    "noEmit": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "noImplicitAny": true,
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
     "strictNullChecks": false
   }
 }
