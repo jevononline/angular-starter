@@ -1,5 +1,5 @@
 # angular starter
-> ng4,AOT,Lazyloading,Test,E2E,Karma,Protractor,Jasmine,TypeScript,TsLint,Codelyzer,Webpack 2
+> ng4,AOT,LazyLoad,Test,E2E,Karma,Protractor,Jasmine,TypeScript,TsLint,Codelyzer,Webpack 2
 ## 安装
 
 ```
