@@ -3,7 +3,7 @@ import 'assets/styles/styles.scss';
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule, PreloadAllModules } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 import { routes } from './app.routes';
 import { AppComponent } from './app.component';
